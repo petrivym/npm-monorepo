@@ -14,3 +14,9 @@
     ```
   - create .gitignore in console
     - echo > README.md
+
+  - setup npm workspace 
+    - add to package.json field
+        ```
+         "workspaces": ["apps/*, packages/*"]
+        ```
