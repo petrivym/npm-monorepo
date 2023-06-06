@@ -20,3 +20,8 @@
         ```
          "workspaces": ["apps/*, packages/*"]
         ```
+  - add client app
+    - use create react app
+        ```
+        npx create-react-app client --template typescript
+        ```
