@@ -1,4 +1,4 @@
-# create nx workspace with different packages.json
+# create npm workspace with nx
   - create package.json file
       ```
     {"name": "src-chat",
@@ -34,4 +34,25 @@
      npm init
     cd ./types
      npm init
-    ```
+    ````
+  - add type script to local packages(types)
+    - install typeScript
+      ```
+        npm i -D typescript
+      ```
+    - add tsconfig.json
+      ```
+        {
+          "compilerOptions": {
+            "jsx": "react-jsx",
+            "allowJs": true,
+            "esModuleInterop": true,
+            "allowSyntheticDefaultImports": true,
+            "module": "commonjs",
+            "outDir": "./dist"
+          },
+          "include": ["."],
+          "exclude": ["dist","node_modules", "**/*.spec.ts"]
+        }
+      ```
+    -
