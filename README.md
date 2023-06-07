@@ -25,3 +25,13 @@
         ```
         npx create-react-app client --template typescript
         ```
+  - init utils and types packages
+    ```
+    cd ./packages
+     mkdir utils
+     mkdir types
+    cd ./utils
+     npm init
+    cd ./types
+     npm init
+    ```

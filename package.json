@@ -1,12 +1,13 @@
 {
   "name": "src-chat",
+  "private": true,
   "version": "1.0.0",
   "description": "pet-project chat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run --workspace=apps/client start"
   },
   "author": "Yaroslav Petriv",
   "license": "ISC",
-  "workspaces": ["apps/*, packages/*"]
+  "workspaces": ["apps/*", "packages/*"]
 }
