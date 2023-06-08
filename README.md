@@ -66,7 +66,7 @@
       ```
         "build": "rmdir /S /Q dist & tsc"
       ```
-      also in a top level
+      - also in a top level
       ```
       "build-package-types": "npm run --workspace=packages/types build"
       ```
@@ -79,3 +79,15 @@
         cd ./app/client
         npm link @src-chat/types
       ```
+    - add backend app
+      ```
+      npx create-next-app@latest
+      ```
+      ------
+      - workspace & npm
+        ```
+        npx create-next-app@latest
+        npm run start --workspace=app --workspace=api
+        npm run start --workspaces
+        npm run start --workspaces --if-present
+        ```
