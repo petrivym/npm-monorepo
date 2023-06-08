@@ -1,8 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as SrcTypes from "@src-chat/types";
 import './App.css';
+import logo from './logo.svg';
 
 function App() {
+  const x:SrcTypes.init = {hello: "hello"}
+  console.log(x)
   return (
     <div className="App">
       <header className="App-header">

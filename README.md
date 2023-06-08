@@ -55,7 +55,7 @@
           "exclude": ["dist","node_modules", "**/*.spec.ts"]
         }
       ```
-    - share main npm packages to another workspaces 
+    - share main npm packages to another workspaces
       ```
         cd ./root
         npm init
@@ -69,4 +69,13 @@
       also in a top level
       ```
       "build-package-types": "npm run --workspace=packages/types build"
+      ```
+    - share types packages to app client and test work
+      ```
+        cd ./packages/types
+        npm link
+      ```
+      ```
+        cd ./app/client
+        npm link @src-chat/types
       ```
