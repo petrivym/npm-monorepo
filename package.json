@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run --workspace=apps/client start",
-    "build-package-utils": "npm run --workspace=packages/types build"
+    "build-package-types": "npm run --workspace=packages/types build"
   },
   "author": "Yaroslav Petriv",
   "license": "ISC",

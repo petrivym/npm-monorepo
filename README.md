@@ -55,4 +55,18 @@
           "exclude": ["dist","node_modules", "**/*.spec.ts"]
         }
       ```
-    -
+    - share main npm packages to another workspaces 
+      ```
+        cd ./root
+        npm init
+        cd ./low level package
+        npm init top level name package
+      ```
+      - Create build script to test
+      ```
+        "build": "rmdir /S /Q dist & tsc"
+      ```
+      also in a top level
+      ```
+      "build-package-types": "npm run --workspace=packages/types build"
+      ```

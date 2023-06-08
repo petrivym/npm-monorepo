@@ -5,7 +5,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "rmdir /S /Q dist & tsc"
   },
   "author": "",
   "license": "ISC"
