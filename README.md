@@ -1,4 +1,4 @@
-# create npm workspace with nx
+# create npm workspace 
   - create package.json file
       ```
     {"name": "src-chat",
